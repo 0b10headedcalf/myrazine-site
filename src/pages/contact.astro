@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us | Myrazine">
+    <div class="bg-white py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
+        <div class="relative max-w-xl mx-auto">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl font-serif">Contact Sales & Support</h2>
+                <p class="mt-4 text-lg leading-6 text-slate-500">
+                    Get in touch with our team for samples, pricing, or technical documentation. We typically respond within 24 hours.
+                </p>
+            </div>
+            
+            <div class="mt-12">
+                <form action="#" method="POST" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                    <div>
+                        <label for="first-name" class="block text-sm font-medium text-slate-700">First name</label>
+                        <div class="mt-1">
+                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="py-3 px-4 block w-full shadow-sm focus:ring-[#556b2f] focus:border-[#556b2f] border-slate-300 rounded-sm border">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="last-name" class="block text-sm font-medium text-slate-700">Last name</label>
+                        <div class="mt-1">
+                            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="py-3 px-4 block w-full shadow-sm focus:ring-[#556b2f] focus:border-[#556b2f] border-slate-300 rounded-sm border">
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="company" class="block text-sm font-medium text-slate-700">Company</label>
+                        <div class="mt-1">
+                            <input type="text" name="company" id="company" autocomplete="organization" class="py-3 px-4 block w-full shadow-sm focus:ring-[#556b2f] focus:border-[#556b2f] border-slate-300 rounded-sm border">
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+                        <div class="mt-1">
+                            <input type="email" name="email" id="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm focus:ring-[#556b2f] focus:border-[#556b2f] border-slate-300 rounded-sm border">
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="inquiry-type" class="block text-sm font-medium text-slate-700">Inquiry Type</label>
+                        <div class="mt-1">
+                            <select id="inquiry-type" name="inquiry-type" class="py-3 px-4 block w-full shadow-sm focus:ring-[#556b2f] focus:border-[#556b2f] border-slate-300 rounded-sm border bg-white">
+                                <option>Request Sample</option>
+                                <option>Request Quote</option>
+                                <option>Technical Support</option>
+                                <option>Regulatory Documentation</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+                        <div class="mt-1">
+                            <textarea id="message" name="message" rows="4" class="py-3 px-4 block w-full shadow-sm focus:ring-[#556b2f] focus:border-[#556b2f] border-slate-300 rounded-sm border"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="sm:col-span-2">
+                        <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-sm shadow-sm text-base font-medium text-white bg-[#556b2f] hover:bg-[#3a4a1d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#556b2f] transition-colors">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Additional Contact Info -->
+            <div class="mt-16 border-t border-slate-200 pt-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
+                    <div>
+                        <h3 class="text-lg font-medium text-slate-900">Headquarters</h3>
+                        <p class="mt-2 text-base text-slate-500">
+                            123 Biotech Blvd, Innovation Park<br>
+                            San Francisco, CA 94016<br>
+                            USA
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium text-slate-900">Direct Contact</h3>
+                        <p class="mt-2 text-base text-slate-500">
+                            <span class="block">Sales: sales@myrazine.com</span>
+                            <span class="block">Phone: +1 (555) 012-3456</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
