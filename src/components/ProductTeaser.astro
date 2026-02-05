@@ -1,0 +1,22 @@
+---
+import type { Product } from '../data/products';
+
+interface Props extends Product {}
+
+const { name, fema, profile, number } = Astro.props;
+---
+
+<div class="pt-6">
+  <div class="flow-root bg-slate-50 rounded-lg px-6 pb-8 border border-slate-100 h-full hover:shadow-lg transition-shadow">
+    <div class="-mt-6">
+      <div class="inline-flex items-center justify-center p-3 bg-[#556b2f] rounded-md shadow-lg">
+        <span class="text-white font-bold text-xl">{number}</span>
+      </div>
+      <h3 class="mt-8 text-lg font-medium text-slate-900 tracking-tight">{name}</h3>
+      <p class="mt-2 text-sm text-slate-500 font-mono">FEMA {fema}</p>
+      <p class="mt-5 text-base text-slate-500">
+        {profile}
+      </p>
+    </div>
+  </div>
+</div>
